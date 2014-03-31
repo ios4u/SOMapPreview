@@ -20,6 +20,24 @@ Intended for inline use with UITableView or UICollectionView where maps would be
 	- Border and corner rounding is toggleable.
 + Scaleable (untested)
 
+```
+/* Setup MKDirections with route information */
+self.mapPreview = [[SOMapPreview alloc] initWithFrame:CGRectMake(0,0,90,90)];
+
+/* Default values */
+self.mapPreview.cacheDirectory = @"tmp/"; // NSTemporaryDirectory();
+self.mapPreview.routeColor = [UIColor blueColor];
+self.mapPreview.greyscale = NO;
+self.mapPreview.bordered = YES;
+self.mapPreview.roundedImage = YES;
+self.mapPreview.showsBuildings = NO;
+self.mapPreview.showsPOI = NO;
+self.mapPreview.mapType = MKMapTypeStandard;
+
+[self.mapPreview renderPolylineOnMap:polyline];
+
+```
+
 ---
 
 <p align="center" >
