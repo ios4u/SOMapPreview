@@ -20,6 +20,8 @@ Intended for inline use with UITableView or UICollectionView where maps would be
 	- Border and corner rounding is toggleable.
 + Scaleable (untested)
 
+---
+
 ```
 /* Setup MKDirections with route information */
 self.mapPreview = [[SOMapPreview alloc] initWithFrame:CGRectMake(0,0,90,90)];
